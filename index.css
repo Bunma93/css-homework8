@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background-image: url(https://tinder.com/static/build/ac062d1b428513b9c13d11026d330e34.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    filter: blur(0.1px);
+    z-index: -3;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 70px;
+    background: linear-gradient(0deg, rgba(235, 234, 234, 0) 0%, rgb(0, 0, 0, 0.8) 50%);
+}
+.navbar_login {
+    display: flex;
+    align-items: center;
+}
+.navbar_option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+img {
+    height: 100px;
+}
+
+.newaccount {
+    padding: 12px 20px;
+    font-size: medium;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(to bottom, #ff6666 0%, #ff0066 100%);
+    border: none;
+    border-radius: 25px;
+    width: 120px;
+}
+.login {
+    padding: 12px 20px;
+    font-size: medium;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    background: white;
+    border: none;
+    border-radius: 25px;
+    margin: 5px 10px;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.main>div {
+    font-size: 120px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* เพิ่มสีทึบลงบนพื้นหลัง */
+    z-index: -2;
+}
+a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: white;
+}
+a:hover {
+    color:#ff0066;
+}
+button {
+    cursor: pointer;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+li {
+    margin-right: 10px;
+    font-size: 20px;
+}
+.navbar_option {
+    list-style: none;
+}
+.navbar_option li {
+    position: relative;
+}  
+
+.dropdown-menu {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 500px;
+    font-size: 20px;
+}
+
+.dropdown-menu li a {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: -9px;
+}
+
+.dropdown-menu li a:hover {
+    color: #ff0066;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* แสดง dropdown เมื่อเม้าส์ชี้ */
+}
+
+.logo{
+    width: 150px;
+    margin-right: 24px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: block;
+    fill:#fff
+}
